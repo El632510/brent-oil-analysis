@@ -1,0 +1,16 @@
+event_name,start_date,category,description
+Gulf War (Iraqi invasion of Kuwait),1990-08-02,Conflict,"Iraq invades Kuwait, removing a major OPEC producer from the market and triggering a sharp price spike on supply fears."
+Asian Financial Crisis,1997-07-02,Economic Shock,Currency collapses across Southeast Asia sharply reduce regional oil demand and pressure prices lower.
+9/11 Terrorist Attacks,2001-09-11,Geopolitical,Attacks on the US trigger a short-term demand shock and broader market uncertainty.
+US Invasion of Iraq,2003-03-20,Conflict,US-led invasion disrupts Iraqi oil production and raises long-term supply risk premiums.
+Global Financial Crisis,2008-09-15,Economic Shock,Lehman Brothers collapse triggers a global recession and the sharpest oil demand collapse in decades.
+Arab Spring / Libyan Civil War,2011-02-17,Conflict,Unrest across the Middle East and North Africa halts Libyan oil exports and raises regional supply risk.
+OPEC Maintains Production Despite Falling Prices,2014-11-27,OPEC Policy,"OPEC declines to cut output despite falling prices, accelerating a price collapse driven by the US shale boom."
+Iran Nuclear Deal (JCPOA),2015-07-14,OPEC Policy,"Sanctions relief paves the way for Iranian oil to return to global markets, adding to oversupply concerns."
+OPEC+ Production Cut Agreement,2016-11-30,OPEC Policy,OPEC and non-OPEC producers (Russia included) agree to coordinated output cuts to support prices after the 2014-16 crash.
+US Reimposes Sanctions on Iran,2018-05-08,Sanctions,"US withdraws from the JCPOA and reinstates sanctions, removing Iranian barrels from the market."
+Saudi Arabia-Russia Price War,2020-03-08,OPEC Policy,"OPEC+ talks collapse and Saudi Arabia floods the market, crashing prices just as COVID-19 demand losses begin."
+COVID-19 Demand Collapse,2020-03-11,Economic Shock,"WHO declares a pandemic; global lockdowns cause the largest demand shock in oil market history, briefly sending US futures negative."
+OPEC+ Record Production Cuts,2020-04-12,OPEC Policy,OPEC+ agrees to historic coordinated cuts of ~9.7 million bpd to stabilize the collapsed market.
+Russia Invades Ukraine,2022-02-24,Conflict,Invasion triggers sanctions on Russian energy exports and a sharp spike in prices on supply disruption fears.
+EU Ban and Price Cap on Russian Oil,2022-12-05,Sanctions,EU embargo and G7 price cap on Russian seaborne crude reshape global trade flows and pricing.

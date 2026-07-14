@@ -1,5 +1,6 @@
 """
 Functions for loading and cleaning the Brent oil price dataset.
+
 The raw CSV has an annoying quirk: dates before ~2017 are formatted like
 "20-May-87", while more recent rows are formatted like "Nov 08, 2022".
 pandas can't parse both with a single format string, so we handle them
@@ -12,7 +13,7 @@ import numpy as np
 def load_raw_prices(path: str) -> pd.DataFrame:
     """
     Load the raw Brent oil price CSV and return a clean, sorted DataFrame
-    with a proper datetime index.
+    with a proper datetime column.
 
     Args:
         path: path to the raw CSV file (Date, Price columns)
@@ -42,7 +43,7 @@ def load_raw_prices(path: str) -> pd.DataFrame:
 def add_log_returns(df: pd.DataFrame, price_col: str = "Price") -> pd.DataFrame:
     """
     Add a log_return column to the DataFrame: log(price_t) - log(price_t-1).
-    This is what we'll actually model in Task 2 since raw prices are not
+    This is what we actually model in Task 2 since raw prices are not
     stationary but log returns roughly are.
     """
     df = df.copy()
@@ -72,8 +73,8 @@ def check_missing_values(df: pd.DataFrame) -> pd.Series:
 def check_duplicates(df: pd.DataFrame, subset="Date") -> int:
     """
     Report duplicate dates. Duplicates are only logged here, not removed,
-    since deciding how to handle them (keep first, average, etc.) is an
-    analysis decision, not a loading decision.
+    since deciding how to handle them is an analysis decision, not a
+    loading decision.
     """
     duplicate_count = df.duplicated(subset=subset).sum()
     if duplicate_count > 0:
@@ -108,9 +109,7 @@ def load_and_validate_prices(path: str) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    # quick manual check when running this file directly
-    prices = load_raw_prices("data/raw/BrentOilPrices.csv")
-    prices = add_log_returns(prices)
+    prices = load_and_validate_prices("data/BrentOilPrices.csv")
     print(prices.head())
     print(prices.tail())
     print(f"\nDate range: {prices['Date'].min().date()} to {prices['Date'].max().date()}")
